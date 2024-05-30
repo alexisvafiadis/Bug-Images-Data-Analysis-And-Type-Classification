@@ -170,6 +170,7 @@ def cat_plot(data, col, ystr, type, title=None, hue=None,debug=False):
     action : trace graphiques pertinents de chaque variable discrète par rapport à target
     output : figure matplotlib
     """
+    plt.rc('legend', fontsize = 14)
     col = [x for x in col if (len(data[x].unique()) < 30) & (col != ystr)]
     fig, axes = plt.subplots(nrows = ceil(len(col)/2), ncols=2, figsize=(20,4 * len(col)))
     axs = axes.flatten()
@@ -197,7 +198,7 @@ def cat_plot(data, col, ystr, type, title=None, hue=None,debug=False):
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
     adjustfig(fig)
-    fig.suptitle(f"Variables catégoriques en fonction de {ystr}", fontsize=21, y=0.95)
+    fig.suptitle(f"Variables catégoriques en fonction de {ystr}", fontsize=21, y=1.05)
     plt.show()
 
 def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=False, boxplot=False,debug=False):
@@ -206,6 +207,7 @@ def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=Fa
     action : trace graphiques pertinents de chaque variable continue par rapport à target
     output : figure matplotlib
     """
+    plt.rc('legend', fontsize = 14)
     fig, axes = plt.subplots(nrows = ceil(len(col)/2), ncols=2, figsize=(20,4 * len(col)))
     axs = axes.flatten()
     j = 0
@@ -240,7 +242,7 @@ def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=Fa
                 j = j+1
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
-    fig.suptitle(title, fontsize=21, y=0.95)
+    fig.suptitle(title, fontsize=21, y=1.05)
     adjustfig(fig)
     plt.show()
 
@@ -276,7 +278,7 @@ def distribution(data, col,debug=False):
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
     adjustfig(fig)
-    fig1.suptitle("Distribution des variables", fontsize=20, y=0.92)
+    fig.suptitle("Distribution des variables", fontsize=20, y=1.05)
     plt.show()
 
 def plot_nunique_values(data):
