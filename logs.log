@@ -1,0 +1,211 @@
+2024-05-30 17:44:55,508:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 17:44:55,508:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 17:44:55,508:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 17:44:55,508:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 18:16:32,998:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 18:16:32,998:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 18:16:32,998:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 18:16:32,998:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 18:16:33,431:INFO:PyCaret ClassificationExperiment
+2024-05-30 18:16:33,431:INFO:Logging name: clf-default-name
+2024-05-30 18:16:33,431:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-05-30 18:16:33,431:INFO:version 3.3.2
+2024-05-30 18:16:33,431:INFO:Initializing setup()
+2024-05-30 18:16:33,431:INFO:self.USI: 10ef
+2024-05-30 18:16:33,431:INFO:self._variable_keys: {'_available_plots', 'X', 'X_train', 'html_param', 'y_test', 'gpu_n_jobs_param', 'target_param', 'fix_imbalance', 'seed', 'exp_name_log', 'is_multiclass', 'fold_generator', 'data', 'X_test', 'logging_param', 'y_train', 'pipeline', 'exp_id', 'gpu_param', 'log_plots_param', 'memory', 'fold_groups_param', 'idx', 'fold_shuffle_param', 'USI', '_ml_usecase', 'n_jobs_param', 'y'}
+2024-05-30 18:16:33,431:INFO:Checking environment
+2024-05-30 18:16:33,431:INFO:python_version: 3.11.3
+2024-05-30 18:16:33,431:INFO:python_build: ('tags/v3.11.3:f3909b8', 'Apr  4 2023 23:49:59')
+2024-05-30 18:16:33,431:INFO:machine: AMD64
+2024-05-30 18:16:33,431:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-30 18:16:33,431:INFO:Memory: svmem(total=16968564736, available=5093408768, percent=70.0, used=11875155968, free=5093408768)
+2024-05-30 18:16:33,431:INFO:Physical Core: 4
+2024-05-30 18:16:33,431:INFO:Logical Core: 8
+2024-05-30 18:16:33,431:INFO:Checking libraries
+2024-05-30 18:16:33,431:INFO:System:
+2024-05-30 18:16:33,431:INFO:    python: 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]
+2024-05-30 18:16:33,431:INFO:executable: c:\Users\milen\AppData\Local\Programs\Python\Python311\python.exe
+2024-05-30 18:16:33,431:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-30 18:16:33,431:INFO:PyCaret required dependencies:
+2024-05-30 18:16:33,446:INFO:                 pip: 24.0
+2024-05-30 18:16:33,446:INFO:          setuptools: 65.5.0
+2024-05-30 18:16:33,446:INFO:             pycaret: 3.3.2
+2024-05-30 18:16:33,446:INFO:             IPython: 8.12.0
+2024-05-30 18:16:33,446:INFO:          ipywidgets: 8.1.3
+2024-05-30 18:16:33,448:INFO:                tqdm: 4.66.4
+2024-05-30 18:16:33,448:INFO:               numpy: 1.26.4
+2024-05-30 18:16:33,448:INFO:              pandas: 2.0.1
+2024-05-30 18:16:33,448:INFO:              jinja2: 3.1.3
+2024-05-30 18:16:33,448:INFO:               scipy: 1.10.1
+2024-05-30 18:16:33,448:INFO:              joblib: 1.2.0
+2024-05-30 18:16:33,448:INFO:             sklearn: 1.4.2
+2024-05-30 18:16:33,448:INFO:                pyod: 1.1.3
+2024-05-30 18:16:33,448:INFO:            imblearn: 0.12.2
+2024-05-30 18:16:33,448:INFO:   category_encoders: 2.6.0
+2024-05-30 18:16:33,448:INFO:            lightgbm: 4.3.0
+2024-05-30 18:16:33,448:INFO:               numba: 0.59.1
+2024-05-30 18:16:33,448:INFO:            requests: 2.31.0
+2024-05-30 18:16:33,448:INFO:          matplotlib: 3.7.1
+2024-05-30 18:16:33,448:INFO:          scikitplot: 0.3.7
+2024-05-30 18:16:33,448:INFO:         yellowbrick: 1.5
+2024-05-30 18:16:33,448:INFO:              plotly: 5.22.0
+2024-05-30 18:16:33,448:INFO:    plotly-resampler: Not installed
+2024-05-30 18:16:33,448:INFO:             kaleido: 0.2.1
+2024-05-30 18:16:33,448:INFO:           schemdraw: 0.15
+2024-05-30 18:16:33,448:INFO:         statsmodels: 0.13.5
+2024-05-30 18:16:33,448:INFO:              sktime: 0.26.0
+2024-05-30 18:16:33,448:INFO:               tbats: 1.1.3
+2024-05-30 18:16:33,448:INFO:            pmdarima: 2.0.4
+2024-05-30 18:16:33,448:INFO:              psutil: 5.9.5
+2024-05-30 18:16:33,448:INFO:          markupsafe: 2.1.5
+2024-05-30 18:16:33,448:INFO:             pickle5: Not installed
+2024-05-30 18:16:33,448:INFO:         cloudpickle: 2.2.1
+2024-05-30 18:16:33,448:INFO:         deprecation: 2.1.0
+2024-05-30 18:16:33,448:INFO:              xxhash: 3.4.1
+2024-05-30 18:16:33,448:INFO:           wurlitzer: Not installed
+2024-05-30 18:16:33,448:INFO:PyCaret optional dependencies:
+2024-05-30 18:16:33,467:INFO:                shap: 0.45.0
+2024-05-30 18:16:33,467:INFO:           interpret: Not installed
+2024-05-30 18:16:33,467:INFO:                umap: Not installed
+2024-05-30 18:16:33,467:INFO:     ydata_profiling: Not installed
+2024-05-30 18:16:33,467:INFO:  explainerdashboard: Not installed
+2024-05-30 18:16:33,467:INFO:             autoviz: Not installed
+2024-05-30 18:16:33,467:INFO:           fairlearn: Not installed
+2024-05-30 18:16:33,467:INFO:          deepchecks: Not installed
+2024-05-30 18:16:33,467:INFO:             xgboost: 1.7.5
+2024-05-30 18:16:33,467:INFO:            catboost: 1.2.5
+2024-05-30 18:16:33,467:INFO:              kmodes: Not installed
+2024-05-30 18:16:33,467:INFO:             mlxtend: Not installed
+2024-05-30 18:16:33,467:INFO:       statsforecast: Not installed
+2024-05-30 18:16:33,467:INFO:        tune_sklearn: Not installed
+2024-05-30 18:16:33,467:INFO:                 ray: Not installed
+2024-05-30 18:16:33,467:INFO:            hyperopt: 0.2.7
+2024-05-30 18:16:33,467:INFO:              optuna: 3.6.1
+2024-05-30 18:16:33,467:INFO:               skopt: Not installed
+2024-05-30 18:16:33,467:INFO:              mlflow: Not installed
+2024-05-30 18:16:33,467:INFO:              gradio: Not installed
+2024-05-30 18:16:33,467:INFO:             fastapi: Not installed
+2024-05-30 18:16:33,467:INFO:             uvicorn: Not installed
+2024-05-30 18:16:33,467:INFO:              m2cgen: Not installed
+2024-05-30 18:16:33,467:INFO:           evidently: Not installed
+2024-05-30 18:16:33,467:INFO:               fugue: Not installed
+2024-05-30 18:16:33,467:INFO:           streamlit: Not installed
+2024-05-30 18:16:33,467:INFO:             prophet: Not installed
+2024-05-30 18:16:33,467:INFO:None
+2024-05-30 18:16:33,467:INFO:Set up data.
+2024-05-30 18:16:33,498:INFO:Set up folding strategy.
+2024-05-30 18:16:33,498:INFO:Set up train/test split.
+2024-05-30 18:16:33,515:INFO:Set up index.
+2024-05-30 18:16:33,515:INFO:Assigning column types.
+2024-05-30 18:16:33,548:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-30 18:16:33,599:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,599:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,636:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:33,636:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:33,682:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,682:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,717:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:33,717:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:33,717:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-30 18:16:33,766:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,800:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:33,800:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:33,882:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-30 18:16:33,915:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:33,920:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:33,920:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-05-30 18:16:33,984:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:33,984:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:34,049:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:34,049:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:34,066:INFO:Preparing preprocessing pipeline...
+2024-05-30 18:16:34,066:INFO:Set up label encoding.
+2024-05-30 18:16:34,066:INFO:Set up simple imputation.
+2024-05-30 18:16:34,066:INFO:Set up feature normalization.
+2024-05-30 18:16:34,132:INFO:Finished creating preprocessing pipeline.
+2024-05-30 18:16:34,149:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\milen\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['nb_pixels_ratio',
+                                             'image_symmetry_index',
+                                             'mask_bb_symmetry_index',
+                                             'roundness',
+                                             'mean_centroid_distanc...
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True)))],
+         verbose=False)
+2024-05-30 18:16:34,149:INFO:Creating final display dataframe.
+2024-05-30 18:16:34,557:INFO:Setup _display_container:                     Description   
+0                    Session id  \
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8              Numeric features   
+9                    Preprocess   
+10              Imputation type   
+11           Numeric imputation   
+12       Categorical imputation   
+13                    Normalize   
+14             Normalize method   
+15               Fold Generator   
+16                  Fold Number   
+17                     CPU Jobs   
+18                      Use GPU   
+19               Log Experiment   
+20              Experiment Name   
+21                          USI   
+
+                                                Value  
+0                                                 123  
+1                                            bug_type  
+2                                          Multiclass  
+3   Bee: 0, Bumblebee: 1, Butterfly: 2, Hover fly:...  
+4                                          (248, 135)  
+5                                          (248, 135)  
+6                                          (173, 135)  
+7                                           (75, 135)  
+8                                                 134  
+9                                                True  
+10                                             simple  
+11                                               mean  
+12                                               mode  
+13                                               True  
+14                                             zscore  
+15                                    StratifiedKFold  
+16                                                 10  
+17                                                 -1  
+18                                              False  
+19                                              False  
+20                                   clf-default-name  
+21                                               10ef  
+2024-05-30 18:16:34,667:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:34,667:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:34,781:INFO:Soft dependency imported: xgboost: 1.7.5
+2024-05-30 18:16:34,781:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 18:16:34,781:INFO:setup() successfully completed in 1.38s...............
