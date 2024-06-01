@@ -186,7 +186,7 @@ def cat_plot(data, col, ystr, type, title=None, hue=None,debug=False):
                 ax.tick_params(labelrotation=90)
             j = j + 1
     elif type == "classification":
-        if title == None:
+        if title is None:
             fig.suptitle('Probability of each class of ' + ystr + ' for all categories', fontsize=22)
         for i in col:
             if debug: print(i)
@@ -198,10 +198,11 @@ def cat_plot(data, col, ystr, type, title=None, hue=None,debug=False):
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
     adjustfig(fig)
-    fig.suptitle(f"Variables catégoriques en fonction de {ystr}", fontsize=21, y=1.05)
+    if title is not None:
+        fig.suptitle(title, fontsize=21, y=1.05)
     plt.show()
 
-def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=False, boxplot=False,debug=False):
+def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=False, boxplot=False,debug=False, **kwargs):
     """
     input : df, liste des variables continues (list(str)), target (str)
     action : trace graphiques pertinents de chaque variable continue par rapport à target
@@ -230,14 +231,14 @@ def num_plot(data, col, ystr, type, kde=True, title=None, hue=None, facetgrid=Fa
         for i in col:
             if i != ystr:
                 if (kde):
-                    ax = sns.kdeplot(data=data, x=i, hue=ystr, ax=axs[j])
+                    ax = sns.kdeplot(data=data, x=i, hue=ystr, ax=axs[j], **kwargs)
                 else:
                     if (boxplot):
                         ax = sns.boxplot(data=data,x=ystr,y=i,ax=axs[j])
                     else:
                         ax = sns.histplot(data=data, x=i, hue=ystr, ax=axs[j], element="poly",stat="probability", fill=False)
                 labelsizes(ax)
-                if (boxplot and len(data[i].unique()) > 5):
+                if (boxplot) and (len(data[i].unique()) > 5):
                     ax.tick_params(labelrotation=90)
                 j = j+1
     if len(col) % 2 != 0:
@@ -256,7 +257,7 @@ def y_distribution(data, col):
     ax = sns.histplot(data=data, x=col, ax=ax, stat="probability")
     plt.show()
     
-def distribution(data, col,debug=False):
+def distribution(data, col,debug=False, title='Distribution des variables'):
     """
     input : df, liste de colonnes
     action : trace distribution de toutes les colonnes
@@ -278,7 +279,7 @@ def distribution(data, col,debug=False):
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
     adjustfig(fig)
-    fig.suptitle("Distribution des variables", fontsize=20, y=1.05)
+    fig.suptitle(title, fontsize=20, y=1.05)
     plt.show()
 
 def plot_nunique_values(data):
