@@ -257,7 +257,7 @@ def y_distribution(data, col):
     ax = sns.histplot(data=data, x=col, ax=ax, stat="probability")
     plt.show()
     
-def distribution(data, col,debug=False, title='Distribution des variables'):
+def distribution(data, col,debug=False, title='Distribution des variables', y=1.05, hue=None, stat="probability"):
     """
     input : df, liste de colonnes
     action : trace distribution de toutes les colonnes
@@ -271,7 +271,7 @@ def distribution(data, col,debug=False, title='Distribution des variables'):
         #max_n = 30
         #if (len(data[i].unique()) > 30):
         #top_categories = data[i].value_counts().sort_values(ascending=False)[:
-        ax = sns.histplot(data=data, x=i, ax=axs[j], stat="probability")
+        ax = sns.histplot(data=data, x=i, ax=axs[j], hue=hue)
         labelsizes(ax)
         if (len(data[i].unique()) > 5):
             ax.tick_params(labelrotation=90)
@@ -279,7 +279,7 @@ def distribution(data, col,debug=False, title='Distribution des variables'):
     if len(col) % 2 != 0:
         axs[len(col)].set_axis_off()
     adjustfig(fig)
-    fig.suptitle(title, fontsize=20, y=1.05)
+    fig.suptitle(title, fontsize=20, y=y)
     plt.show()
 
 def plot_nunique_values(data):
