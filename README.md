@@ -1,14 +1,24 @@
 # Bug Images Data Analysis And Type Classification
+<table>
+  <tr>
+    <td>
+      <h2>Project Introduction</h2>
+      <p>This project, <strong>"To Bee or Not to Bee"</strong>, focuses on applying data analysis and machine learning techniques to identify pollinator insects (like bees and bumblebees) from other species. The dataset consists of high-resolution images with corresponding segmentation masks for training classification models.</p>
+      <h3>Goals</h3>
+      <ul>
+        <li>Detect and classify pollinator insects (bees, bumblebees, and other insects) based on key features extracted from images.</li>
+        <li>Build and evaluate machine learning models using both supervised and unsupervised methods to classify the insects.</li>
+        <li>Analyze the impact of feature extraction, data augmentation, and dimensionality reduction techniques on model performance.</li>
+      </ul>
+    </td>
+      <td>
+      <img src="train/122.JPG" alt="Example of Bug Image" width="2500px">
+    </td>
+  </tr>
+</table>
 
-## Project Introduction
 
-This project, **"To Bee or Not to Bee"**, focuses on applying data analysis and machine learning techniques to identify pollinator insects (like bees and bumblebees) from other species. The dataset consists of high-resolution images with corresponding segmentation masks for training classification models.
 
-### Goals
-
-- Detect and classify pollinator insects (bees, bumblebees, and other insects) based on key features extracted from images.
-- Build and evaluate machine learning models using both supervised and unsupervised methods to classify the insects.
-- Analyze the impact of feature extraction, data augmentation, and dimensionality reduction techniques on model performance.
 
 ## Features & Functionality
 
