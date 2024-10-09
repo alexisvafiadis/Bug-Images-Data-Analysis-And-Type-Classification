@@ -12,7 +12,7 @@
       </ul>
     </td>
       <td>
-      <img src="train/122.JPG" alt="Example of Bug Image" width="2500px">
+      <img src="train/122.JPG" alt="Example of Bug Image" width="2500">
     </td>
   </tr>
 </table>
