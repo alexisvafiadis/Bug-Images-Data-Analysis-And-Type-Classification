@@ -22,8 +22,6 @@
 
 ## Features & Functionality
 
-The project involves several key components and steps:
-
 - **Feature Extraction**: Extract features such as color, shape, and texture from insect images to use as input for machine learning algorithms.
 - **Data Augmentation**: Handle data imbalance with techniques like SMOTE and ADASYN to generate synthetic data for underrepresented classes.
 - **Machine Learning Models**: Implement a variety of models, including logistic regression, support vector machines, K-Nearest Neighbors, and neural networks for insect classification.
@@ -33,8 +31,6 @@ The project involves several key components and steps:
 
 
 ## Project Structure
-
-The project is organized into several folders and files:
 
 - **Root Folder**: Contains Jupyter notebooks documenting the different steps of the project. Each file is named according to the step it corresponds to:
   - `1_data_extraction.ipynb`: Data extraction and cleaning.
@@ -76,6 +72,7 @@ The project is organized into several folders and files:
 
 
 ### Final Algorithms Used for Prediction
+
 - **Logistic Regression**: A simple linear model used for classification, showing excellent performance on the dataset.
 - **Support Vector Machines (SVM)**: Both RBF and Polynomial kernels were tested for classification.
 - **K-Nearest Neighbors (KNN)**: A distance-based algorithm used for classification.
