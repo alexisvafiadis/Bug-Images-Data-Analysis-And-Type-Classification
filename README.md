@@ -57,15 +57,14 @@
 - **Python**: Main programming language for data extraction, preprocessing, and modeling.
 - **Jupyter Notebooks**: For documenting the steps and visualizations in an interactive manner.
 - **Pandas**: Used for data manipulation, feature engineering, and exploratory data analysis.
-- **OpenCV**: Leveraged for image processing tasks such as extracting features from the insect images.
-- **Scikit-learn**: Utilized for building traditional machine learning models (e.g., logistic regression, SVM, KNN, etc.) and performing dimensionality reduction techniques (e.g., PCA, t-SNE).
+- **OpenCV**: Leveraged to extract features from the insect images (image processing).
+- **Scikit-Image**: For advanced image processing tasks like contour detection.
+- **Scikit-learn**: Utilized for building traditional machine learning models (logistic regression, SVM, KNN, RF, etc.) and performing dimensionality reduction techniques (PCA, t-SNE, ISOMAP).
 - **XGBoost & LightGBM**: Implemented for building ensemble learning models such as gradient-boosted decision trees.
-- **SMOTE/ADASYN**: Data augmentation libraries for addressing class imbalance by generating synthetic samples.
+- **SMOTE/ADASYN**: Used for addressing the huge class imbalance of the dataset by generating synthetic samples of minority classes (oversampling).
 - **Matplotlib & Seaborn**: Libraries for visualizing various features, correlations, and model performance metrics.
-- **Scikit-Image**: For advanced image processing tasks like contour detection and mask creation.
-- **Hyperopt**: Used for hyperparameter optimization of machine learning models.
-- **Imbalanced-learn**: For handling class imbalances using techniques like SMOTE and ADASYN.
-- **PyTorch**: Deep learning library used for implementing neural networks, including custom architectures for image classification.
+- **Hyperopt**: Used for hyperparameter optimization of the machine learning models which proved effective.
+- **PyTorch**: Deep learning library used for implementing neural networks, including custom architectures.
 - **SHAP**: For model interpretability and to explain feature importance in complex models.
 
 ---
@@ -75,13 +74,12 @@
 
 - **Logistic Regression**: A simple linear model used for classification, showing excellent performance on the dataset.
 - **Support Vector Machines (SVM)**: Both RBF and Polynomial kernels were tested for classification.
-- **K-Nearest Neighbors (KNN)**: A distance-based algorithm used for classification.
-- **Random Forest**: An ensemble learning method used for building decision trees and improving model performance.
-- **Extra Trees**: Another ensemble method that provided better results than Random Forest.
-- **XGBoost & LightGBM**: Gradient-boosted tree algorithms used for high-performance classification tasks.
-- **Stacking Classifier**: An ensemble of various models combined to improve prediction accuracy.
-- **Neural Networks (PyTorch)**: Deep learning models, built with custom architectures, used for classifying insect images.
-
+- **K-Nearest Neighbors (KNN)**: A distance-based algorithm used for classification, that gave decent, but not great, results.
+- **Random Forest**: An ensemble learning method used for combining decision trees.
+- **Extra Trees**: Another ensemble method that provided slightly better results than Random Forest.
+- **XGBoost & LightGBM**: Gradient-boosted tree algorithms that got the best results out of all algorithms tested.
+- **Neural Networks**: Deep learning models, built with custom architectures, used for classifying insect images.
+- **Stacking Classifier**: An ensemble of the previous models combined to improve prediction accuracy, with a voting system.
 
 
 
