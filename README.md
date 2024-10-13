@@ -3,7 +3,7 @@
   <tr>
     <td>
       <h2>Project Introduction</h2>
-      <p>This project, <strong>"To Bee or Not to Bee"</strong>, focuses on applying data analysis and machine learning techniques to identify pollinator insects (like bees and bumblebees) from other species. The dataset consists of 347 high-resolution images with corresponding segmentation masks, precisely delineating insects and making it possible to extract relevant features. The first 250 images are associated with a label, which means that we can recursively train and evaluate our models, while the remaining 97 don’t and will be used to evaluate the performance of our developed models on data it has never seen. </p>
+      <p>This project, <strong>"To Bee or Not to Bee"</strong>, focuses on applying data analysis and machine learning techniques to identify pollinator insects (like bees and bumblebees) from other species. The dataset consists of 347 high-resolution images with corresponding segmentation masks, precisely delineating insects and enabling us to extract relevant features. The first 250 images are associated with a label, which means that we can recursively train and evaluate our models, while the remaining 97 don’t and will be used to evaluate the performance of our models.</p>
     </td>
       <td>
       <img src="train/122.JPG" alt="Example of Bug Image" width="2500">
