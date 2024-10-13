@@ -54,7 +54,7 @@
 
 ## Technologies Used
 
-- **Python**: Main programming language for data extraction, preprocessing, and modeling.
+- **Python**: Main programming language for data preprocessing, analysis and modeling.
 - **Jupyter Notebooks**: For documenting the steps and visualizations in an interactive manner.
 - **Pandas**: Used for data manipulation, feature engineering, and exploratory data analysis.
 - **OpenCV**: Leveraged to extract features from the insect images (image processing).
